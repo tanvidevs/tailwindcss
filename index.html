@@ -7,40 +7,37 @@
 </head>
 <body>
      <!--header-->
-     
-<nav class="bg-white border-gray-200 dark:bg-white-400 bg-local">
-    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
-        <a href="https://flowbite.com" class="flex items-center">
-            <img src="logo (1).png" class="h-6 mr-3 sm:h-9 text-white " alt="image" />
-            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
-        </a>
-        <div class="flex items-center">
-            <a href="tel:5541251234" class="mr-6 text-sm font-medium text-gray-500 dark:text-black hover:underline">(555) 412-1234</a>
-            <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+     <div class="header-2 fixed-top">
+
+      <nav class="bg-white py-2 md:py-4">
+        <div class="container px-4 mx-auto md:flex md:items-center">
+    
+          <div class="flex justify-between items-center">
+            <img src="../img/Logo.png" class="h-10">
+            <a href="#" class="font-bold text-3xl text-yellow-500">Imborndigital</a>
+            <button class="border border-solid border-yellow-500 px-3 py-1 rounded text-yellow-500 opacity-50 hover:opacity-75 md:hidden" id="navbar-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+            </button>
+          </div>
+    
+          <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
+            <a href="../index.html" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded bg-yellow-500 text-gray-100 transition-colors duration-300">Home</a>
+            <a href="./pages/aboutus.html" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">About us</a>
+            <a href="./pages/Services.html" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Services</a>
+            <a href="./pages/ourclients.html" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Our Clients</a>
+            <a href="./pages/blog.html" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Blog</a>
+            <a href="./pages/testimonials.html" class="p-2 lg:px-4 md:mx-2 text-gray-900 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Testimonials</a>
+            <a href="./pages/contact.html" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Contact Us</a>
+            <!-- <a href="#" class="p-2 lg:px-4 md:mx-2 text-yellow-600 text-center border border-transparent rounded hover:bg-yellow-100 hover:text-yellow-700 transition-colors duration-300">Login</a> -->
+            <a href="tel:703-821-4873" class="p-2 lg:px-4 md:mx-2 text-yellow-500 text-center border border-solid border-yellow-500 rounded hover:bg-yellow-500 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1">Call Us</a>
+          </div>
         </div>
-    </div>
-</nav>
-<nav class="bg-yellow-50 dark:bg-yellow-400">
-    <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
-        <div class="flex items-center">
-            <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium">
-                <li>
-                    <a href="#" class="text-gray-900 dark:text-white hover:underline" aria-current="page"> Gem Stone</a>
-                </li>
-                <li>
-                    <a href="#" class="text-gray-900 dark:text-white hover:underline">Horoscopes</a>
-                </li>
-                <li>
-                    <a href="#" class="text-gray-900 dark:text-white hover:underline">Testimonials</a>
-                </li>
-                <li>
-                    <a href="#" class="text-gray-900 dark:text-white hover:underline">Abot Us</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
- 
+      </nav>
+      <div class="dividers bg-yellow-500 h-1"></div>
+    
+    
 <!--2nd header-->
 
 <section
@@ -70,7 +67,7 @@
       <div class="mt-8 flex flex-wrap gap-4 text-center">
         <a
           href="#"
-          class="block w-full rounded bg-yellow-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-yellow-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+          class="block w-full rounded bg-yellow-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-yellow-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
         >
           Get Started
         </a>
@@ -135,28 +132,28 @@
 <div class="md:flex md:flex-wrap md:-mx-4 mt-6 md:mt-12">
 
   <div class="md:w-1/4 md:px-3 xl:px-6 mt-8 md:mt-0 text-center">
-    <span class="w-20 border-t-2 border-solid border-green-200 inline-block mb-3"></span>
+    <span class="w-20 border-t-2 border-solid border-yellow-400 inline-block mb-3"></span>
     <img src="./img/web.png" class="mx-auto my-5 transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out">
     <h5 class="text-xl font-medium uppercase mb-4">Website/Web App Development</h5>
     <p class="text-gray-600">Our first goal is to fulfill your need and requirement. We develop stable websites and apps with best care and best of our knowledge so that you don't get down.</p>
   </div>
 
   <div class="md:w-1/4 md:px-3 xl:px-6 mt-8 md:mt-0 text-center">
-    <span class="w-20 border-t-2 border-solid border-green-200 inline-block mb-3"></span>
+    <span class="w-20 border-t-2 border-solid border-yellow-400 inline-block mb-3"></span>
     <img src="./img/android.png" class="mx-auto my-5 transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out">
     <h5 class="text-xl font-medium uppercase mb-4">Android/iOS App Development</h5>
     <p class="text-gray-600">Today, time is so precious to waste. Here we strive to provide digital & social media marketing and posting on behalf of you at a very affordable rate that you'll love.</p>
   </div>
 
   <div class="md:w-1/4 md:px-3 xl:px-6 mt-8 md:mt-0 text-center">
-    <span class="w-20 border-t-2 border-solid border-green-200 inline-block mb-3"></span>
+    <span class="w-20 border-t-2 border-solid border-yellow inline-block mb-3"></span>
     <img src="./img/dm.png" class="mx-auto my-5 transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out">
     <h5 class="text-xl font-medium uppercase mb-4">Digital Marketing</h5>
     <p class="text-gray-600">It is known to corporate world that product innovation and engineering budgets are at its peak in digital marketing.</p>
   </div>
   
   <div class="md:w-1/4 md:px-3 xl:px-6 mt-8 md:mt-0 text-center">
-    <span class="w-20 border-t-2 border-solid border-green-200 inline-block mb-3"></span>
+    <span class="w-20 border-t-2 border-solid border-yellow inline-block mb-3"></span>
     <img src="./img/gd.png" class="mx-auto my-5 transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out">
     <h5 class="text-xl font-medium uppercase mb-4">GRAPHICS DESIGNING</h5>
     <p class="text-gray-600">The public is more familiar with bad design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with. The new becomes threatening, the old reassuring.</p>
