@@ -31,3 +31,16 @@ $(document).ready(function(){
       }]
   });
 });
+
+
+  // Code.gs
+function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSheet();
+  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+  var nextRow = sheet.getLastRow()+1;
+  var newRow = headers.map(function(header) {
+    return e.parameter[header];
+  });
+  sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow]);
+  return ContentService.createTextOutput(JSON.stringify({"result":"success", "row": nextRow})).setMimeType(ContentService.MimeType.JSON);
+}
